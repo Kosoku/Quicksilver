@@ -18,7 +18,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSDictionary<KeyType, ObjectType> (KQSExtensions)
+@interface NSDictionary<__covariant KeyType, __covariant ObjectType> (KQSExtensions)
 
 /**
  Invokes block once for each key/value pair in the receiver.

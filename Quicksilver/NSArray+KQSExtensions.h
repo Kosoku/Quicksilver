@@ -18,7 +18,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSArray<ObjectType> (KQSExtensions)
+@interface NSArray<__covariant ObjectType> (KQSExtensions)
 
 /**
  Invokes block once for each object in the receiver.

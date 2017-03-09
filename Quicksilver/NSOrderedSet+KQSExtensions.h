@@ -18,7 +18,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSOrderedSet<ObjectType> (KQSExtensions)
+@interface NSOrderedSet<__covariant ObjectType> (KQSExtensions)
 
 /**
  Invokes block once for each object in the receiver.
