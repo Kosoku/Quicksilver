@@ -1,6 +1,6 @@
 //
 //  NSOrderedSet+KQSExtensions.h
-//  Agamotto
+//  Quicksilver
 //
 //  Created by William Towe on 3/8/17.
 //  Copyright (c) 2017 Kosoku Interactive, LLC. All rights reserved.
