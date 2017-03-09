@@ -24,6 +24,23 @@
 		07D776C21E70ECC500256448 /* KQSNSOrderedSetExtensionsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D776C11E70ECC500256448 /* KQSNSOrderedSetExtensionsTestCase.m */; };
 		07D776C41E70ED6800256448 /* KQSNSSetExtensionsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D776C31E70ED6800256448 /* KQSNSSetExtensionsTestCase.m */; };
 		07D776C61E70EDBA00256448 /* KQSNSStringExtensionsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D776C51E70EDBA00256448 /* KQSNSStringExtensionsTestCase.m */; };
+		07E920581E70F0CF009A4AD9 /* Quicksilver.h in Headers */ = {isa = PBXBuildFile; fileRef = 072628521E70E92300511F80 /* Quicksilver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07E920591E70F0CF009A4AD9 /* NSArray+KQSExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0726285B1E70EA6C00511F80 /* NSArray+KQSExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07E9205A1E70F0CF009A4AD9 /* NSDictionary+KQSExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0726285D1E70EA6C00511F80 /* NSDictionary+KQSExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07E9205B1E70F0CF009A4AD9 /* NSOrderedSet+KQSExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0726285F1E70EA6C00511F80 /* NSOrderedSet+KQSExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07E9205C1E70F0CF009A4AD9 /* NSSet+KQSExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 072628611E70EA6C00511F80 /* NSSet+KQSExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07E9205D1E70F0CF009A4AD9 /* NSString+KQSExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 072628631E70EA6C00511F80 /* NSString+KQSExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07E920671E70F104009A4AD9 /* Quicksilver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E9204F1E70F00A009A4AD9 /* Quicksilver.framework */; };
+		07E9206F1E70F184009A4AD9 /* KQSNSArrayExtensionsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 072628751E70EB2B00511F80 /* KQSNSArrayExtensionsTestCase.m */; };
+		07E920701E70F184009A4AD9 /* KQSNSDictionaryExtensionsTextCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0726287E1E70EC4300511F80 /* KQSNSDictionaryExtensionsTextCase.m */; };
+		07E920711E70F184009A4AD9 /* KQSNSOrderedSetExtensionsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D776C11E70ECC500256448 /* KQSNSOrderedSetExtensionsTestCase.m */; };
+		07E920721E70F184009A4AD9 /* KQSNSSetExtensionsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D776C31E70ED6800256448 /* KQSNSSetExtensionsTestCase.m */; };
+		07E920731E70F184009A4AD9 /* KQSNSStringExtensionsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D776C51E70EDBA00256448 /* KQSNSStringExtensionsTestCase.m */; };
+		07E920741E70F206009A4AD9 /* NSArray+KQSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0726285C1E70EA6C00511F80 /* NSArray+KQSExtensions.m */; };
+		07E920751E70F206009A4AD9 /* NSDictionary+KQSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0726285E1E70EA6C00511F80 /* NSDictionary+KQSExtensions.m */; };
+		07E920761E70F206009A4AD9 /* NSOrderedSet+KQSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 072628601E70EA6C00511F80 /* NSOrderedSet+KQSExtensions.m */; };
+		07E920771E70F206009A4AD9 /* NSSet+KQSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 072628621E70EA6C00511F80 /* NSSet+KQSExtensions.m */; };
+		07E920781E70F206009A4AD9 /* NSString+KQSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 072628641E70EA6C00511F80 /* NSString+KQSExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +50,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0726284E1E70E92300511F80;
 			remoteInfo = "Quicksilver-iOS";
+		};
+		07E920681E70F104009A4AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 072628441E70E91400511F80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07E9204E1E70F00A009A4AD9;
+			remoteInfo = "Quicksilver-macOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -58,6 +82,10 @@
 		07D776C11E70ECC500256448 /* KQSNSOrderedSetExtensionsTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQSNSOrderedSetExtensionsTestCase.m; sourceTree = "<group>"; };
 		07D776C31E70ED6800256448 /* KQSNSSetExtensionsTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQSNSSetExtensionsTestCase.m; sourceTree = "<group>"; };
 		07D776C51E70EDBA00256448 /* KQSNSStringExtensionsTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQSNSStringExtensionsTestCase.m; sourceTree = "<group>"; };
+		07E9204F1E70F00A009A4AD9 /* Quicksilver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quicksilver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07E920571E70F053009A4AD9 /* Quicksilver-macOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quicksilver-macOS-Info.plist"; sourceTree = "<group>"; };
+		07E920621E70F103009A4AD9 /* QuicksilverTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QuicksilverTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07E9206D1E70F13E009A4AD9 /* QuicksilverTests-macOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuicksilverTests-macOS-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +101,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				072628781E70EB2B00511F80 /* Quicksilver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E9204B1E70F00A009A4AD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E9205F1E70F103009A4AD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E920671E70F104009A4AD9 /* Quicksilver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +136,8 @@
 			children = (
 				0726284F1E70E92300511F80 /* Quicksilver.framework */,
 				072628731E70EB2B00511F80 /* QuicksilverTests-iOS.xctest */,
+				07E9204F1E70F00A009A4AD9 /* Quicksilver.framework */,
+				07E920621E70F103009A4AD9 /* QuicksilverTests-macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				072628531E70E92300511F80 /* Quicksilver-iOS-Info.plist */,
+				07E920571E70F053009A4AD9 /* Quicksilver-macOS-Info.plist */,
 				072628581E70E96500511F80 /* Quicksilver-Info.h */,
 			);
 			name = "Supporting Files";
@@ -141,9 +187,18 @@
 				07D776C11E70ECC500256448 /* KQSNSOrderedSetExtensionsTestCase.m */,
 				07D776C31E70ED6800256448 /* KQSNSSetExtensionsTestCase.m */,
 				07D776C51E70EDBA00256448 /* KQSNSStringExtensionsTestCase.m */,
-				072628771E70EB2B00511F80 /* QuicksilverTests-iOS-Info.plist */,
+				07E9206E1E70F144009A4AD9 /* Supporting Files */,
 			);
 			path = QuicksilverTests;
+			sourceTree = "<group>";
+		};
+		07E9206E1E70F144009A4AD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				072628771E70EB2B00511F80 /* QuicksilverTests-iOS-Info.plist */,
+				07E9206D1E70F13E009A4AD9 /* QuicksilverTests-macOS-Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +214,19 @@
 				0726286B1E70EA6C00511F80 /* NSSet+KQSExtensions.h in Headers */,
 				0726286D1E70EA6C00511F80 /* NSString+KQSExtensions.h in Headers */,
 				072628671E70EA6C00511F80 /* NSDictionary+KQSExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E9204C1E70F00A009A4AD9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E920581E70F0CF009A4AD9 /* Quicksilver.h in Headers */,
+				07E920591E70F0CF009A4AD9 /* NSArray+KQSExtensions.h in Headers */,
+				07E9205B1E70F0CF009A4AD9 /* NSOrderedSet+KQSExtensions.h in Headers */,
+				07E9205C1E70F0CF009A4AD9 /* NSSet+KQSExtensions.h in Headers */,
+				07E9205D1E70F0CF009A4AD9 /* NSString+KQSExtensions.h in Headers */,
+				07E9205A1E70F0CF009A4AD9 /* NSDictionary+KQSExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +269,42 @@
 			productReference = 072628731E70EB2B00511F80 /* QuicksilverTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		07E9204E1E70F00A009A4AD9 /* Quicksilver-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07E920561E70F00A009A4AD9 /* Build configuration list for PBXNativeTarget "Quicksilver-macOS" */;
+			buildPhases = (
+				07E9204A1E70F00A009A4AD9 /* Sources */,
+				07E9204B1E70F00A009A4AD9 /* Frameworks */,
+				07E9204C1E70F00A009A4AD9 /* Headers */,
+				07E9204D1E70F00A009A4AD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quicksilver-macOS";
+			productName = "Quicksilver-macOS";
+			productReference = 07E9204F1E70F00A009A4AD9 /* Quicksilver.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		07E920611E70F103009A4AD9 /* QuicksilverTests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07E9206A1E70F104009A4AD9 /* Build configuration list for PBXNativeTarget "QuicksilverTests-macOS" */;
+			buildPhases = (
+				07E9205E1E70F103009A4AD9 /* Sources */,
+				07E9205F1E70F103009A4AD9 /* Frameworks */,
+				07E920601E70F103009A4AD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07E920691E70F104009A4AD9 /* PBXTargetDependency */,
+			);
+			name = "QuicksilverTests-macOS";
+			productName = "QuicksilverTests-macOS";
+			productReference = 07E920621E70F103009A4AD9 /* QuicksilverTests-macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -219,6 +323,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
+					07E9204E1E70F00A009A4AD9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					07E920611E70F103009A4AD9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 072628471E70E91400511F80 /* Build configuration list for PBXProject "Quicksilver" */;
@@ -234,7 +346,9 @@
 			projectRoot = "";
 			targets = (
 				0726284E1E70E92300511F80 /* Quicksilver-iOS */,
+				07E9204E1E70F00A009A4AD9 /* Quicksilver-macOS */,
 				072628721E70EB2B00511F80 /* QuicksilverTests-iOS */,
+				07E920611E70F103009A4AD9 /* QuicksilverTests-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +362,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		072628711E70EB2B00511F80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E9204D1E70F00A009A4AD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E920601E70F103009A4AD9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,6 +409,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07E9204A1E70F00A009A4AD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E920761E70F206009A4AD9 /* NSOrderedSet+KQSExtensions.m in Sources */,
+				07E920781E70F206009A4AD9 /* NSString+KQSExtensions.m in Sources */,
+				07E920751E70F206009A4AD9 /* NSDictionary+KQSExtensions.m in Sources */,
+				07E920741E70F206009A4AD9 /* NSArray+KQSExtensions.m in Sources */,
+				07E920771E70F206009A4AD9 /* NSSet+KQSExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E9205E1E70F103009A4AD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E920711E70F184009A4AD9 /* KQSNSOrderedSetExtensionsTestCase.m in Sources */,
+				07E9206F1E70F184009A4AD9 /* KQSNSArrayExtensionsTestCase.m in Sources */,
+				07E920731E70F184009A4AD9 /* KQSNSStringExtensionsTestCase.m in Sources */,
+				07E920701E70F184009A4AD9 /* KQSNSDictionaryExtensionsTextCase.m in Sources */,
+				07E920721E70F184009A4AD9 /* KQSNSSetExtensionsTestCase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,6 +440,11 @@
 			isa = PBXTargetDependency;
 			target = 0726284E1E70E92300511F80 /* Quicksilver-iOS */;
 			targetProxy = 072628791E70EB2B00511F80 /* PBXContainerItemProxy */;
+		};
+		07E920691E70F104009A4AD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07E9204E1E70F00A009A4AD9 /* Quicksilver-macOS */;
+			targetProxy = 07E920681E70F104009A4AD9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -354,7 +511,7 @@
 				INFOPLIST_PREFIX_HEADER = "$(SRCROOT)/Quicksilver/Quicksilver-Info.h";
 				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -412,7 +569,7 @@
 				INFOPLIST_PREFIX_HEADER = "$(SRCROOT)/Quicksilver/Quicksilver-Info.h";
 				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kosoku.quicksilver;
@@ -522,6 +679,224 @@
 			};
 			name = Release;
 		};
+		07E920541E70F00A009A4AD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Quicksilver/Quicksilver-macOS-Info.plist";
+				INFOPLIST_PREFIX_HEADER = "$(SRCROOT)/Quicksilver/Quicksilver-Info.h";
+				INFOPLIST_PREPROCESS = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kosoku.quicksilver;
+				PRODUCT_NAME = Quicksilver;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		07E920551E70F00A009A4AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Quicksilver/Quicksilver-macOS-Info.plist";
+				INFOPLIST_PREFIX_HEADER = "$(SRCROOT)/Quicksilver/Quicksilver-Info.h";
+				INFOPLIST_PREPROCESS = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kosoku.quicksilver;
+				PRODUCT_NAME = Quicksilver;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		07E9206B1E70F104009A4AD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/QuicksilverTests/$(TARGET_NAME)-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kosoku.QuicksilverTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		07E9206C1E70F104009A4AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/QuicksilverTests/$(TARGET_NAME)-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kosoku.QuicksilverTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -551,6 +926,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		07E920561E70F00A009A4AD9 /* Build configuration list for PBXNativeTarget "Quicksilver-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07E920541E70F00A009A4AD9 /* Debug */,
+				07E920551E70F00A009A4AD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07E9206A1E70F104009A4AD9 /* Build configuration list for PBXNativeTarget "QuicksilverTests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07E9206B1E70F104009A4AD9 /* Debug */,
+				07E9206C1E70F104009A4AD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,7 +12,7 @@
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
-	<key>CFBundlePacKQSeType</key>
+	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
 	<string>$(KQSBUNDLE_SHORT_VERSION_STRING)</string>
