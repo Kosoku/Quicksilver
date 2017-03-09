@@ -1,0 +1,16 @@
+# references:
+# * http://www.objc.io/issue-6/travis-ci.html
+# * https://github.com/supermarin/xcpretty#usage
+
+os: osx
+osx_image: xcode8.2
+language: objective-c
+script: ./scripts/travis-ci.sh
+notifications:
+    email:
+        on_success: never
+        on_failure: always
+branches:
+    only:
+        - master
+ 

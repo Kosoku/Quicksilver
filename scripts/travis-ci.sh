@@ -1,0 +1,3 @@
+xcodebuild test -project Quicksilver.xcodeproj -scheme QuicksilverTests-iOS -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 7 Plus,OS=10.0" ONLY_ACTIVE_ARCH=NO | xcpretty
+xcodebuild test -project Quicksilver.xcodeproj -scheme QuicksilverTests-tvOS -sdk appletvsimulator -destination "platform=tvOS Simulator,name=Apple TV 1080p,OS=10.0" ONLY_ACTIVE_ARCH=NO | xcpretty
+xcodebuild test -project Quicksilver.xcodeproj -scheme QuicksilverTests-macOS -sdk macosx ONLY_ACTIVE_ARCH=NO | xcpretty
