@@ -1,5 +1,5 @@
 //
-//  NSDictionary+BBBlockExtensions.m
+//  NSDictionary+KSOBlockExtensions.m
 //  Quicksilver
 //
 //  Created by William Towe on 3/8/17.
