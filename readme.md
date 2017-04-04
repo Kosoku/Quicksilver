@@ -6,8 +6,8 @@
 [![Platform](http://img.shields.io/cocoapods/p/Quicksilver.svg)]()
 [![License](http://img.shields.io/cocoapods/l/Quicksilver.svg)](https://github.com/Kosoku/Quicksilver/blob/master/license.txt)
 
-Quicksilver is an iOS/macOS/tvOS/watchOS framework that extends the collection classes (`NSArray`,`NSSet`,`NSOrderedSet`,`NSDictionary`, and `NSString`) and makes them easier to work with.
+*Quicksilver* is an iOS/macOS/tvOS/watchOS framework that extends the collection classes (`NSArray`,`NSSet`,`NSOrderedSet`,`NSDictionary`, and `NSString`) and makes them easier to work with.
 
 ### Installation
 
-You can install `Quicksilver` using [cocoapods](https://cocoapods.org/), [Carthage](https://github.com/Carthage/Carthage), or as a framework.
+You can install *Quicksilver* using [cocoapods](https://cocoapods.org/), [Carthage](https://github.com/Carthage/Carthage), or as a framework.
