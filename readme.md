@@ -1,6 +1,7 @@
 ## Quicksilver
 
 [![Build Status](https://travis-ci.org/Kosoku/Quicksilver.svg?branch=master)](https://travis-ci.org/Kosoku/Quicksilver)
+[![codecov.io](http://codecov.io/github/Kosoku/Quicksilver/branch/master/graphs/badge.svg)](http://codecov.io/github/Kosoku/Quicksilver)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](http://img.shields.io/cocoapods/v/Quicksilver.svg)](http://cocoapods.org/?q=Quicksilver)
 [![Platform](http://img.shields.io/cocoapods/p/Quicksilver.svg)]()
