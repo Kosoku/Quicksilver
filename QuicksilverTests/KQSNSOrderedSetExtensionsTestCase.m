@@ -73,6 +73,12 @@
     XCTAssertEqualObjects([begin KQS_map:^id(NSNumber *object, NSInteger index) {
         return object.stringValue;
     }], end);
+    
+    end = [NSOrderedSet orderedSetWithArray:@[@"1",[NSNull null],@"3"]];
+    
+    XCTAssertEqualObjects([begin KQS_map:^id(NSNumber *object, NSInteger index) {
+        return index % 2 == 1 ? nil : object.stringValue;
+    }], end);
 }
 - (void)testReduce {
     NSOrderedSet *begin = [NSOrderedSet orderedSetWithObjects:[NSOrderedSet orderedSetWithObject:@1],[NSOrderedSet orderedSetWithObject:@2],[NSOrderedSet orderedSetWithObject:@3], nil];
@@ -81,6 +87,22 @@
     XCTAssertEqualObjects([begin KQS_reduceWithStart:[[NSMutableOrderedSet alloc] init] block:^id(NSMutableOrderedSet *sum, NSOrderedSet *object, NSInteger index) {
         [sum unionOrderedSet:object];
         return sum;
+    }], end);
+}
+- (void)testReduceFloat {
+    NSOrderedSet *begin = [NSOrderedSet orderedSetWithArray:@[@1.5,@2.5,@3.5]];
+    CGFloat end = 7.5;
+    
+    XCTAssertEqual([begin KQS_reduceFloatWithStart:0.0 block:^CGFloat(CGFloat sum, id  _Nonnull object, NSInteger index) {
+        return sum + [object floatValue];
+    }], end);
+}
+- (void)testReduceInteger {
+    NSOrderedSet *begin = [NSOrderedSet orderedSetWithArray:@[@1,@2,@3]];
+    NSInteger end = 6;
+    
+    XCTAssertEqual([begin KQS_reduceIntegerWithStart:0 block:^NSInteger(NSInteger sum, id  _Nonnull object, NSInteger index) {
+        return sum + [object integerValue];
     }], end);
 }
 - (void)testFlatten {
@@ -186,6 +208,11 @@
     end = [NSDecimalNumber decimalNumberWithString:@"6"];
     
     XCTAssertEqualObjects([begin KQS_sum], end);
+    
+    begin = [NSOrderedSet orderedSet];
+    end = @0;
+    
+    XCTAssertEqualObjects([begin KQS_sum], end);
 }
 - (void)testProduct {
     NSOrderedSet *begin = [NSOrderedSet orderedSetWithArray:@[@2,@3,@4]];
@@ -200,6 +227,11 @@
     
     begin = [NSOrderedSet orderedSetWithArray:@[[NSDecimalNumber decimalNumberWithString:@"2"],[NSDecimalNumber decimalNumberWithString:@"3"],[NSDecimalNumber decimalNumberWithString:@"4"]]];
     end = [NSDecimalNumber decimalNumberWithString:@"24"];
+    
+    XCTAssertEqualObjects([begin KQS_product], end);
+    
+    begin = [NSOrderedSet orderedSet];
+    end = @0;
     
     XCTAssertEqualObjects([begin KQS_product], end);
 }
