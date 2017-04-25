@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Quicksilver'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'Quicksilver is an iOS/macOS/tvOS/watchOS framework that extends the collection classes and makes them easier to work with.'
 
 # This description is used to generate tags and improve search results.
@@ -36,6 +36,7 @@ Quicksilver is an iOS/macOS/tvOS/watchOS framework that extends the collection c
   s.requires_arc = true
 
   s.source_files = 'Quicksilver/**/*.{h,m}'
+  s.exclude_files = 'Quicksilver/Quicksilver-Info.h'
   
   # s.resource_bundles = {
   #   '${POD_NAME}' => ['${POD_NAME}/Assets/*.png']
