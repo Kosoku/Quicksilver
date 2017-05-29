@@ -12,3 +12,10 @@
 ### Installation
 
 You can install *Quicksilver* using [cocoapods](https://cocoapods.org/), [Carthage](https://github.com/Carthage/Carthage), or as a framework.
+
+### Dependencies
+
+Apple:
+
+- `Foundation`
+- `CoreGraphics`
