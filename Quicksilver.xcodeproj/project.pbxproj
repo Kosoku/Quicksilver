@@ -735,7 +735,7 @@
 				INFOPLIST_PREFIX_HEADER = "$(SRCROOT)/Quicksilver/Quicksilver-Info.h";
 				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -793,7 +793,7 @@
 				INFOPLIST_PREFIX_HEADER = "$(SRCROOT)/Quicksilver/Quicksilver-Info.h";
 				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kosoku.quicksilver;
@@ -1494,6 +1494,7 @@
 				07E920551E70F00A009A4AD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07E9206A1E70F104009A4AD9 /* Build configuration list for PBXNativeTarget "QuicksilverTests-macOS" */ = {
 			isa = XCConfigurationList;
@@ -1502,6 +1503,7 @@
 				07E9206C1E70F104009A4AD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07E920831E70F25E009A4AD9 /* Build configuration list for PBXNativeTarget "Quicksilver-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -1510,6 +1512,7 @@
 				07E920851E70F25E009A4AD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07E9209E1E70F332009A4AD9 /* Build configuration list for PBXNativeTarget "QuicksilverTests-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -1518,6 +1521,7 @@
 				07E920A01E70F332009A4AD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07E920B01E70F3D1009A4AD9 /* Build configuration list for PBXNativeTarget "Quicksilver-watchOS" */ = {
 			isa = XCConfigurationList;
@@ -1526,6 +1530,7 @@
 				07E920B21E70F3D1009A4AD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
