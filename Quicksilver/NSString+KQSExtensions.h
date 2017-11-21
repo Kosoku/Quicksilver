@@ -3,7 +3,7 @@
 //  Quicksilver
 //
 //  Created by William Towe on 3/8/18.
-//  Copyright © 2016 Bion Bilateral, LLC. All rights reserved.
+//  Copyright (c) 2016 Kosoku Interactive, LLC. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 //
