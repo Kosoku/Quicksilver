@@ -111,8 +111,13 @@
     }] integerValue];
 }
 - (NSOrderedSet *)KQS_flatten; {
-    return [[self KQS_reduceWithStart:[[NSMutableOrderedSet alloc] init] block:^id _Nonnull(NSMutableOrderedSet * _Nullable sum, NSOrderedSet * _Nonnull object, NSInteger index) {
-        [sum addObjectsFromArray:object.array];
+    return [[self KQS_reduceWithStart:[[NSMutableOrderedSet alloc] init] block:^id _Nonnull(NSMutableOrderedSet * _Nullable sum, id _Nonnull object, NSInteger index) {
+        if ([object isKindOfClass:NSOrderedSet.class]) {
+            [sum addObjectsFromArray:[object KQS_flatten].array];
+        }
+        else {
+            [sum addObject:object];
+        }
         return sum;
     }] copy];
 }

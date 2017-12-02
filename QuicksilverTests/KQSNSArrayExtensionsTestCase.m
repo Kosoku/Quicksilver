@@ -84,14 +84,14 @@
     }], end);
 }
 - (void)testFlatten {
-    NSArray *begin = @[@[@1],@[@2],@[@3]];
-    NSArray *end = @[@1,@2,@3];
+    NSArray *begin = @[@[@1],@[@2],@[@3],@4];
+    NSArray *end = @[@1,@2,@3,@4];
     
     XCTAssertEqualObjects([begin KQS_flatten], end);
 }
 - (void)testFlattenMap {
-    NSArray *begin = @[@[@1],@[@2],@[@3]];
-    NSArray *end = @[@2,@3,@4];
+    NSArray *begin = @[@[@1],@[@2],@[@3],@4];
+    NSArray *end = @[@2,@3,@4,@5];
     
     XCTAssertEqualObjects([begin KQS_flattenMap:^id _Nullable(NSNumber * _Nonnull object, NSInteger index) {
         return @(object.integerValue + 1);

@@ -76,14 +76,14 @@
     }], end);
 }
 - (void)testFlatten {
-    NSSet *begin = [NSSet setWithObjects:[NSSet setWithObject:@1],[NSSet setWithObject:@2],[NSSet setWithObject:@3], nil];
-    NSSet *end = [NSSet setWithArray:@[@1,@2,@3]];
+    NSSet *begin = [NSSet setWithObjects:[NSSet setWithObject:@1],[NSSet setWithObject:@2],[NSSet setWithObject:@3],@4, nil];
+    NSSet *end = [NSSet setWithArray:@[@1,@2,@3,@4]];
     
     XCTAssertEqualObjects([begin KQS_flatten], end);
 }
 - (void)testFlattenMap {
-    NSSet *begin = [NSSet setWithObjects:[NSSet setWithObject:@1],[NSSet setWithObject:@2],[NSSet setWithObject:@3], nil];
-    NSSet *end = [NSSet setWithArray:@[@2,@3,@4]];
+    NSSet *begin = [NSSet setWithObjects:[NSSet setWithObject:@1],[NSSet setWithObject:@2],[NSSet setWithObject:@3],@4, nil];
+    NSSet *end = [NSSet setWithArray:@[@2,@3,@4,@5]];
     
     XCTAssertEqualObjects([begin KQS_flattenMap:^id _Nullable(NSNumber * _Nonnull object) {
         return @(object.integerValue + 1);

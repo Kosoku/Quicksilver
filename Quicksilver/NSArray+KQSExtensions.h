@@ -94,12 +94,18 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSInteger)KQS_reduceIntegerWithStart:(NSInteger)start block:(NSInteger(^)(NSInteger sum, ObjectType object, NSInteger index))block;
 /**
- Return a new array that is a result of flattening the objects in the receiver, which should all be arrays.
+ Return a new array that is a result of recursively flattening the objects in the receiver, which can either be arrays or other objects.
  
  @return The flattened array
- @exception NSException Thrown if the receiver contains non-array objects
  */
 - (NSArray *)KQS_flatten;
+/**
+ Return a string formed by flattening all the receiver's objects using KQS_flatten and then passing them to componentsJoinedByString: using *joinString* as the only argument.
+ 
+ @param joinString The string to use when joining components
+ @return The flattened string
+ */
+- (NSString *)KQS_flattenStrings:(NSString *)joinString;
 /**
  Returns the result of calling `[[self KQS_flatten] KQS_map:block]`.
  

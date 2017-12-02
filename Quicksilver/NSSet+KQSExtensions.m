@@ -97,8 +97,13 @@
     }] integerValue];
 }
 - (NSSet *)KQS_flatten; {
-    return [[self KQS_reduceWithStart:[[NSMutableSet alloc] init] block:^id _Nonnull(NSMutableSet * _Nullable sum, NSSet * _Nonnull object) {
-        [sum unionSet:object];
+    return [[self KQS_reduceWithStart:[[NSMutableSet alloc] init] block:^id _Nonnull(NSMutableSet * _Nullable sum, id _Nonnull object) {
+        if ([object isKindOfClass:NSSet.class]) {
+            [sum unionSet:[object KQS_flatten]];
+        }
+        else {
+            [sum addObject:object];
+        }
         return sum;
     }] copy];
 }

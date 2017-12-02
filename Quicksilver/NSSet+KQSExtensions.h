@@ -87,10 +87,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSInteger)KQS_reduceIntegerWithStart:(NSInteger)start block:(NSInteger(^)(NSInteger sum, ObjectType object))block;
 /**
- Return a new set which is the result of unioning all the objects in the receiver, which should be sets.
+ Return a new set which is the result of recursively unioning all the objects in the receiver, which can be sets or other objects.
  
  @return The flattened set
- @exception NSException Thrown if the receiver contains any non-set objects
  */
 - (NSSet *)KQS_flatten;
 /**

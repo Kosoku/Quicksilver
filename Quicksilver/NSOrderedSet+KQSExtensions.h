@@ -94,10 +94,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSInteger)KQS_reduceIntegerWithStart:(NSInteger)start block:(NSInteger(^)(NSInteger sum, ObjectType object, NSInteger index))block;
 /**
- Return a new ordered set that is a result of flattening the objects in the receiver, which should all be ordered sets.
+ Return a new ordered set that is a result of recursively flattening the objects in the receiver, which can be ordered sets or other objects.
  
  @return The flattened ordered set
- @exception NSException Thrown if the receiver contains non-ordered set objects
  */
 - (NSOrderedSet *)KQS_flatten;
 /**

@@ -106,14 +106,14 @@
     }], end);
 }
 - (void)testFlatten {
-    NSOrderedSet *begin = [NSOrderedSet orderedSetWithObjects:[NSOrderedSet orderedSetWithObject:@1],[NSOrderedSet orderedSetWithObject:@2],[NSOrderedSet orderedSetWithObject:@3], nil];
-    NSOrderedSet *end = [NSOrderedSet orderedSetWithArray:@[@1,@2,@3]];
+    NSOrderedSet *begin = [NSOrderedSet orderedSetWithObjects:[NSOrderedSet orderedSetWithObject:@1],[NSOrderedSet orderedSetWithObject:@2],[NSOrderedSet orderedSetWithObject:@3],@4, nil];
+    NSOrderedSet *end = [NSOrderedSet orderedSetWithArray:@[@1,@2,@3,@4]];
     
     XCTAssertEqualObjects([begin KQS_flatten], end);
 }
 - (void)testFlattenMap {
-    NSOrderedSet *begin = [NSOrderedSet orderedSetWithObjects:[NSOrderedSet orderedSetWithObject:@1],[NSOrderedSet orderedSetWithObject:@2],[NSOrderedSet orderedSetWithObject:@3], nil];
-    NSOrderedSet *end = [NSOrderedSet orderedSetWithArray:@[@2,@3,@4]];
+    NSOrderedSet *begin = [NSOrderedSet orderedSetWithObjects:[NSOrderedSet orderedSetWithObject:@1],[NSOrderedSet orderedSetWithObject:@2],[NSOrderedSet orderedSetWithObject:@3],@4, nil];
+    NSOrderedSet *end = [NSOrderedSet orderedSetWithArray:@[@2,@3,@4,@5]];
     
     XCTAssertEqualObjects([begin KQS_flattenMap:^id _Nullable(NSNumber * _Nonnull object, NSInteger index) {
         return @(object.integerValue + 1);

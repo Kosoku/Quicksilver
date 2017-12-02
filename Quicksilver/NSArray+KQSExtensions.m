@@ -111,10 +111,18 @@
     }] integerValue];
 }
 - (NSArray *)KQS_flatten; {
-    return [[self KQS_reduceWithStart:[[NSMutableArray alloc] init] block:^id _Nonnull(NSMutableArray * _Nullable sum, NSArray * _Nonnull object, NSInteger index) {
-        [sum addObjectsFromArray:object];
+    return [[self KQS_reduceWithStart:[[NSMutableArray alloc] init] block:^id _Nonnull(NSMutableArray * _Nullable sum, id _Nonnull object, NSInteger index) {
+        if ([object isKindOfClass:NSArray.class]) {
+            [sum addObjectsFromArray:[object KQS_flatten]];
+        }
+        else {
+            [sum addObject:object];
+        }
         return sum;
     }] copy];
+}
+- (NSString *)KQS_flattenStrings:(NSString *)joinString {
+    return [[self KQS_flatten] componentsJoinedByString:joinString];
 }
 - (NSArray *)KQS_flattenMap:(id _Nullable(^)(id object, NSInteger index))block; {
     return [[self KQS_flatten] KQS_map:block];
