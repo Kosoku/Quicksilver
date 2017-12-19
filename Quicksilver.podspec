@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Quicksilver'
-  s.version          = '1.1.0'
+  s.version          = '2.0.0'
   s.summary          = 'Quicksilver is an iOS/macOS/tvOS/watchOS framework that extends the collection classes and makes them easier to work with.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Quicksilver is an iOS/macOS/tvOS/watchOS framework that extends the collection c
   s.source           = { :git => 'https://github.com/Kosoku/Quicksilver.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   s.osx.deployment_target = '10.12'
   s.tvos.deployment_target = '10.0'
   s.watchos.deployment_target = '3.0'
